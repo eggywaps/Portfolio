@@ -406,31 +406,49 @@ a{
 
 
 @media (max-width: 900px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
   .home-page {
     flex-direction: column;
+    align-items: center;
     gap: 30px;
-    height: auto;
     padding: 40px 5%;
+    height: auto;
   }
   .profile-img img {
     width: 80vw;
     height: auto;
-    max-width: 350px;
+    max-width: 300px;
   }
   .home-info {
-    max-width: 90vw;
+    max-width: 95vw;
+    text-align: center;
   }
   .about-card,
+  .projects-card,
   .contact-container {
     flex-direction: column;
+    align-items: center;
     gap: 24px;
-    padding: 24px 10px;
+    padding: 24px 5vw;
     max-width: 98vw;
   }
   .contact-card,
-  .about-card {
+  .about-card,
+  .projects-card {
     max-width: 98vw;
     min-width: unset;
     padding: 24px 10px;
+  }
+  .badge-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .site-footer .footer-container {
+    padding: 0 5vw;
+    gap: 10px;
   }
 }
